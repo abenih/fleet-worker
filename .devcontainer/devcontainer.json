@@ -1,0 +1,1 @@
+{"image":"mcr.microsoft.com/devcontainers/universal:2","name":"fleet-worker","postStartCommand":"bash .devcontainer/fleet-bootstrap.sh >> ~/fleet-bootstrap.log 2>&1","shutdownAction":"none"}
