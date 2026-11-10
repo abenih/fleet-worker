@@ -21,3 +21,7 @@ the workflow takes a fixed choice of job names, never free-form input.
 
 Jobs stay our own build/test/probe scripts, at moderate volume. Nothing here
 runs third-party code or hammers external services; probes are status-only.
+- `gb-recon` — bounded reachability probe (Golden Boot capture, 2026-11-10):
+  loads two 1win penalty-title play pages logged-out in headless Chrome,
+  clicks only the demo gate control, uploads frames/net/screenshots as a
+  run artifact. Run 42740697657: gate inert from the runner's US egress too.
