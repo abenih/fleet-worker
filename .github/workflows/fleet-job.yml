@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - probe
+          - gb-recon
         default: probe
 
 jobs:
@@ -19,3 +20,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run job "${{ inputs.job }}"
         run: bash jobs/${{ inputs.job }}.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: job-output-${{ inputs.job }}
+          path: out/
+          if-no-files-found: ignore
